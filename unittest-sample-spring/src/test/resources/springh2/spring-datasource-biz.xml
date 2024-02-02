@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+       ">
+
+    <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+        <property name="maximumPoolSize" value="10"/>
+        <!-- 主要显示在日志记录和JMX管理控制台中，以标识池和池配置 -->
+        <property name="jdbcUrl" value="${h2.jdbc-ref}"/>
+        <!-- name值不能写user,特定属性 -->
+        <property name="connectionTimeout" value="2000"/>
+    </bean>
+
+    <bean name="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+        <constructor-arg ref="hikariConfig"/>
+    </bean>
+
+    <!--3、配置SqlSessionFactoryBean，注意dataSource属性引用的是RoutingDataSource-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="mapperLocations">
+            <list>
+                <value>classpath:mapper/*.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--4、配置ZebraMapperScannerConfigurer-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+        <property name="basePackage" value="com.lesofn.unittest.sample.spring.mybatis"/>
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!--注意事务管理器的dataSource属性指定的也是RoutingDataSource-->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+</beans>

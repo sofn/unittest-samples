@@ -6,8 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
 /**
+ * OrderAnnotation: add @Order on every test method.
+ *
  * @author sofn
- * @date 2022-05-17 17:56
+ * @since 2022-05-17 17:56
  */
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class OrderTest {

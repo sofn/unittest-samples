@@ -1,11 +1,7 @@
 package com.lesofn.unittest.sample.junit5;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-
 import com.google.common.collect.ImmutableList;
 import com.lesofn.unittest.common.Fibonacci;
-
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
@@ -13,19 +9,24 @@ import org.junit.jupiter.params.provider.*;
 import java.util.List;
 import java.util.stream.Stream;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
 
 /**
- * 多参数化测试
- * 需要引入包： junit-jupiter-params
+ * Multi-parameter testing
+ * <p>
+ * need import jar： junit-jupiter-params
  *
  * @author sofn
- * @date 2022-05-17 17:56
+ * @since 2022-05-17 17:56
  */
 public class ParamTest {
 
 
     /**
-     * 这些值将会被自动传给参数value，数组的长度便是方法执行的次数
+     * These values will be automatically passed to the parameter value,
+     * and the length of the array is the number of times the method is executed.
      */
     @ParameterizedTest
     @ValueSource(strings = {"racecar", "radar", "able was I ere I saw elba"})
@@ -35,7 +36,7 @@ public class ParamTest {
 
 
     /**
-     * 提供多类型数据
+     * Provide multiple types of data
      *
      * @param input
      * @param expected
@@ -47,7 +48,7 @@ public class ParamTest {
     }
 
     /**
-     * Csv文件提供多类型大批量数据
+     * Csv files provide multiple types of large batches of data
      *
      * @param input
      * @param expected
@@ -59,7 +60,7 @@ public class ParamTest {
     }
 
     /**
-     * 方法供给数据
+     * method supply data
      *
      * @param arg
      * @param value
@@ -75,7 +76,7 @@ public class ParamTest {
     }
 
     /**
-     * ArgumentsProvider实现类供给数据
+     * ArgumentsProvider implementation class provides data
      *
      * @param arg
      * @param value
@@ -94,7 +95,7 @@ public class ParamTest {
     }
 
     /**
-     * 枚举类供给数据
+     * Enumeration class provides data
      *
      * @param season
      */

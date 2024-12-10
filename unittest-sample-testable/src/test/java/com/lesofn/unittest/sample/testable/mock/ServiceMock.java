@@ -5,7 +5,7 @@ import com.lesofn.unittest.sample.testable.TestableService;
 
 /**
  * @author sofn
- * @date 2022-05-18 20:24
+ * @since 2022-05-18 20:24
  */
 public class ServiceMock {
 

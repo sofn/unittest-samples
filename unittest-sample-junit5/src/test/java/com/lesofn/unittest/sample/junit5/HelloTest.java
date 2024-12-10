@@ -8,27 +8,27 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 /**
  * @author sofn
- * @date 2022-05-17 17:56
+ * @since 2022-05-17 17:56
  */
 public class HelloTest {
 
     @BeforeAll
     public static void beforeClass() {
-        System.out.println("HelloTest类开始最先执行，只执行一次");
+        System.out.println("The HelloTest class is executed first and only once.");
     }
 
     @AfterAll
     public static void afterClass() {
-        System.out.println("HelloTest类执行完后执行，只执行一次");
+        System.out.println("Executed after the HelloTest class is executed, only once");
     }
 
     @BeforeEach
     public void before() {
-        System.out.println("每个@Test方法执行前执行");
+        System.out.println("Executed before each @Test method is executed");
     }
 
     /**
-     * 普通
+     * general
      */
     @Test
     public void test() {
@@ -36,7 +36,7 @@ public class HelloTest {
     }
 
     /**
-     * 断言
+     * assert
      */
     @Test
     public void assertTest() {
@@ -45,7 +45,7 @@ public class HelloTest {
     }
 
     /**
-     * 异常
+     * exception
      */
     @Test
     public void testError() {
@@ -56,6 +56,6 @@ public class HelloTest {
 
     @AfterEach
     public void after() {
-        System.out.println("每个@Test方法执行后执行");
+        System.out.println("Executed after each @Test method is executed");
     }
 }

@@ -13,16 +13,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 /**
- * 类上的注解相当于：
- *
- * @date 2022-05-17 20:02
+ * @author sofn
+ * @since 2022-05-17 20:02
  */
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)
 public class Test4_Spy {
 
     /**
-     * 如果没有实例化，会自动根据默认构造参数实例化1个对象
+     * if not instantiated, an object will be automatically instantiated according to the default construction parameters
      */
     @Spy
     private MyService list;
@@ -42,11 +41,11 @@ public class Test4_Spy {
         // 真实调用
         assertEquals(3, list2.numAdd(1, 2));
 
-        // 这种会真正的执行一次
+        // this will actually be executed once
         when(list2.numAdd(1, 2)).thenReturn(100);
         assertEquals(100, list2.numAdd(1, 2));
 
-        // 这种会避免真正执行
+        // this will avoid actual execution
         doReturn(100).when(list2).numAdd(2, 3);
         assertEquals(100, list2.numAdd(2, 3));
 

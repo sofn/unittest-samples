@@ -14,12 +14,12 @@ import static org.junit.Assert.assertEquals;
 
 
 /**
- * 注意：
- * 1. @PrepareForTest({MyService2.class}) 要写的是要测试的类
- * 2. PowerMockito.whenNew 作用是mock到测试类中方法里new对象
+ * Note:
+ * 1. @PrepareForTest({MyService2.class}) should contain the class to be tested
+ * 2. PowerMockito.whenNew is used to mock the new object in the method of the test class
  *
  * @author sofn
- * @date 2022-05-18 11:36
+ * @since 2022-05-18 11:36
  */
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({PowerMockService.class})

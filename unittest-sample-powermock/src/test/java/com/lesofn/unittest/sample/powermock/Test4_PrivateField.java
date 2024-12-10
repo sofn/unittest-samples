@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * @author sofn
- * @date 2022-05-18 11:36
+ * @since 2022-05-18 11:36
  */
 @RunWith(PowerMockRunner.class)
 public class Test4_PrivateField {

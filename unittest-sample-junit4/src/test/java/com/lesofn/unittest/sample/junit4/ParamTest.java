@@ -12,10 +12,10 @@ import com.lesofn.unittest.common.Fibonacci;
 
 
 /**
- * 多参数化测试
+ * Multi-parameter testing
  *
  * @author sofn
- * @date 2022-05-17 17:56
+ * @since 2022-05-17 17:56
  */
 @RunWith(Parameterized.class)
 public class ParamTest {
@@ -26,15 +26,15 @@ public class ParamTest {
     }
 
     /**
-     * 第1个参数，默认0
-     * 修饰不能为 private
+     * first param, default 0
+     * method must not be private
      */
     @Parameterized.Parameter
     public int input;
 
     /**
-     * 第2个参数
-     * 修饰不能为 private
+     * second param
+     * method must not be private
      */
     @Parameterized.Parameter(1)
     public int expected;

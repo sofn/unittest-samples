@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * 若遇到不符合此规则的类型，应使用注解的treatAs参数显式的指定（ClassType.SourceClass-被测类/ClassType.TestClass-测试类）
  *
  * @author sofn
- * @date 2022-05-18 16:05
+ * @since 2022-05-18 16:05
  */
 @MockWith(value = ServiceMock.class, treatAs = ClassType.TestClass)
 class Test1_Mock3_Annotation {

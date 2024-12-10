@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * 规则：在测试类中创建一个静态内部类，类名必须为Mock
  *
  * @author sofn
- * @date 2022-05-18 16:05
+ * @since 2022-05-18 16:05
  */
 public class Test1_Mock1_InnerClass {
 

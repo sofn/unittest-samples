@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @author sofn
- * @date 2022-05-20 01:12
+ * @since 2022-05-20 01:12
  */
 @Configuration
 @ComponentScan({"com.lesofn.unittest.sample.spring.test2_spring_annotation.config"})

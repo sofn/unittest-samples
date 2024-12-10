@@ -12,23 +12,22 @@ import static org.mockito.Mockito.*;
 
 /**
  * @author sofn
- * @date 2022-05-17 20:02
+ * @since 2022-05-17 20:02
  */
 
 public class Test1_Hello {
 
     @Test
     void helloMock() {
-        // 构建mock数据
         List<String> list = mock(List.class);
         list.add("1");
         list.add("2");
 
-        // 会得到null ，前面只是在记录行为而已，没有往list中添加数据
+        // will get null. The previous step is just recording the behavior and no data is added to the list.
         assertNull(list.get(0));
 
-        verify(list).add("1"); // 正确，因为该行为被记住了
-        // verify(list).add("3"); // 报错，因为前面没有记录这个行为
+        verify(list).add("1"); // correct, because the behavior is remembered
+        // verify(list).add("3"); // throw error because this behavior was not recorded before
     }
 
 

@@ -13,22 +13,22 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.Mockito.verify;
 
 /**
- * 简化Mock创建方式  可以使用字段注解
+ * Simplify the Mock creation method. You can use field annotations
  *
  * @author sofn
- * @date 2022-05-17 20:02
+ * @since 2022-05-17 20:02
  */
 public class Test2_Init {
 
     /**
-     * 要mock的对象
+     * need mock data
      */
     @Mock
     private List<String> list;
 
     /**
-     * 把Mock对象注入的对象，待c测试c测
-     * 根据类型注入mock对象
+     * The object into which the Mock object is injected, to be tested
+     * Inject the mock object according to the type
      */
     @InjectMocks
     private MyService myService;
@@ -40,14 +40,14 @@ public class Test2_Init {
 
     @Test
     void hello() {
-        // 构建mock数据
+        // build mock data
         list.add("1");
         list.add("2");
 
-        // 会得到null，前面只是在记录行为而已，没有往list中添加数据
+        // will get null. The previous step is just recording the behavior, and no data is added to the list.
         assertNull(list.get(0));
 
-        verify(list).add("1"); // 正确，因为该行为被记住了
+        verify(list).add("1"); // correct, because the behavior is remembered
     }
 
     @Test

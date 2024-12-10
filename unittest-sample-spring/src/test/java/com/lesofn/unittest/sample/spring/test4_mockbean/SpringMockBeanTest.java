@@ -23,7 +23,7 @@ import static org.mockito.Mockito.when;
  * @SpyBean 解决了 SpringBoot 的单元测试中 @MockBean 不能 mock 库中自动装配的 Bean 的局限（目前还没需求，有需要的自己查阅资料）。
  *
  * @author sofn
- * @date 2022-05-20 11:09
+ * @since 2022-05-20 11:09
  */
 @RunWith(SpringJUnit4ClassRunner.class) // 使用junit4进行测试
 @ContextConfiguration(classes = {SpringMockBeanTest.SpringAnnoBase.class})

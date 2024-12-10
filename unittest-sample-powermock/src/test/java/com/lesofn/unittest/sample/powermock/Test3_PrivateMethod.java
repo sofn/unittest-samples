@@ -12,7 +12,7 @@ import static org.junit.Assert.assertTrue;
 
 /**
  * @author sofn
- * @date 2022-05-18 11:36
+ * @since 2022-05-18 11:36
  */
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({PowerMockService.class})

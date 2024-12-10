@@ -12,9 +12,8 @@ import java.util.List;
 import static org.mockito.Mockito.*;
 
 /**
- * 类上的注解相当于：
- *
- * @date 2022-05-17 20:02
+ * @author sofn
+ * @since 2022-05-17 20:02
  */
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)

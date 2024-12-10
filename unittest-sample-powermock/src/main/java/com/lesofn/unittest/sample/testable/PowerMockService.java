@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 /**
  * @author sofn
- * @date 2022-05-17 21:08
+ * @since 2022-05-17 21:08
  */
 public class PowerMockService {
     @Getter
@@ -33,7 +33,7 @@ public class PowerMockService {
     }
 
     private void log(String msg) {
-        throw new RuntimeException("不应该执行此行代码");
+        throw new RuntimeException("This line of code should not be executed");
     }
 
 

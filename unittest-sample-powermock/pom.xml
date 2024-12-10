@@ -12,7 +12,7 @@
     <artifactId>unittest-sample-powermock</artifactId>
 
     <properties>
-        <!--和powermock匹配的mockito版本-->
+        <!-- the mockito version that matches powermock -->
         <mockito.version>2.26.0</mockito.version>
     </properties>
 

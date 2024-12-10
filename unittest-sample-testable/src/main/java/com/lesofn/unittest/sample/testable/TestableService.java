@@ -2,7 +2,7 @@ package com.lesofn.unittest.sample.testable;
 
 /**
  * @author sofn
- * @date 2022-05-18 20:14
+ * @since 2022-05-18 20:14
  */
 public class TestableService {
 

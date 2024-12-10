@@ -29,11 +29,11 @@
         </dependency>
         <!--junit5 end-->
 
-        <!--mockito整合junit5-->
+        <!--mockito integration junit5-->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-junit-jupiter</artifactId>
-            <version>4.5.1</version>
+            <version>4.11.0</version>
         </dependency>
     </dependencies>
 

@@ -4,7 +4,7 @@ import com.alibaba.testable.core.annotation.MockInvoke;
 
 /**
  * @author sofn
- * @date 2022-05-18 20:54
+ * @since 2022-05-18 20:54
  */
 public class TestableServiceMock {
 

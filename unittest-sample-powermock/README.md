@@ -1,4 +1,10 @@
-教程：https://github.com/powermock/powermock/wiki/Mockito
+Tutorial：https://github.com/powermock/powermock/wiki/Mockito
+
+Note:
+* The powermock project has stopped maintenance
+* powermock only supports junit4 and does not support junit5
+* The latest version of powermock 2.0.9 supports the latest mockito version: 2.26.0
+* To integrate mockito with powermock, you need to import the package: org.mockito:mockito-inline
 
 注意：
 * powermock 项目已停止维护

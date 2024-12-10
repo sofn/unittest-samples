@@ -19,34 +19,34 @@ import static org.mockito.Mockito.verify;
  * @BeforeEach public void before() {
  * MockitoAnnotations.openMocks(this);
  * }
- * @date 2022-05-17 20:02
+ * @since 2022-05-17 20:02
  */
 @ExtendWith(MockitoExtension.class)
 public class Test2_Junit5_Annotation {
 
     /**
-     * 要mock的对象
+     * the object to mock
      */
     @Mock
     private List<String> list;
 
     /**
-     * 把Mock对象注入的对象
-     * 待测试对象
+     * The object into which the Mock object is injected
+     * The object to be tested
      */
     @InjectMocks
     private MyService myService;
 
     @Test
     void hello() {
-        // 构建mock数据
+        // build mock data
         list.add("1");
         list.add("2");
 
-        // 会得到null ，前面只是在记录行为而已，没有往list中添加数据
+        // will get null. The previous step is just recording the behavior, and no data is added to the list.
         assertNull(list.get(0));
 
-        verify(list).add("1"); // 正确，因为该行为被记住了
+        verify(list).add("1"); //correct, because the behavior is remembered
     }
 
 

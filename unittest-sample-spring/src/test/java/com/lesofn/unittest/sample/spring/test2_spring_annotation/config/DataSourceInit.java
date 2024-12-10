@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 
 /**
  * @author sofn
- * @date 2022-05-20 00:08
+ * @since 2022-05-20 00:08
  */
 @Configuration
 public class DataSourceInit {

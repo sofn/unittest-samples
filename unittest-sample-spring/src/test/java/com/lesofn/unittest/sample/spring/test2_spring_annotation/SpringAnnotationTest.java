@@ -14,7 +14,7 @@ import static org.junit.Assert.assertNull;
 
 /**
  * @author sofn
- * @date 2022-05-19 21:22
+ * @since 2022-05-19 21:22
  */
 @RunWith(SpringJUnit4ClassRunner.class) // 使用junit4进行测试
 @ContextConfiguration(classes = {SpringAnnoBase.class})

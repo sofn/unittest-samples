@@ -34,7 +34,7 @@
 
         <!--环境配置 -->
         <groovy.version>4.0.18</groovy.version>
-        <spring.version>5.3.31</spring.version>
+        <spring.version>5.3.39</spring.version>
         <mybatis.version>3.5.6</mybatis.version>
         <mybatis-spring.version>2.1.2</mybatis-spring.version>
 
@@ -46,11 +46,11 @@
         <!--test platform-->
         <junit5.version>5.10.1</junit5.version>
         <junit-platform-launcher.version>1.10.1</junit-platform-launcher.version>
-        <mockito-junit-jupiter.version>4.5.1</mockito-junit-jupiter.version>
+        <mockito-junit-jupiter.version>4.11.0</mockito-junit-jupiter.version>
         <spock.version>2.3-groovy-4.0</spock.version>
 
         <!--mock-->
-        <mockito.version>4.5.1</mockito.version>
+        <mockito.version>4.11.0</mockito.version>
         <powermock.version>2.0.9</powermock.version>
         <junit4.version>4.13.2</junit4.version>
         <testable.version>0.7.9</testable.version>

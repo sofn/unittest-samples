@@ -17,14 +17,12 @@
             <artifactId>unittest-common</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- 添加Groovy依赖 -->
         <dependency>
             <groupId>org.apache.groovy</groupId>
             <artifactId>groovy</artifactId>
             <version>${groovy.version}</version>
             <scope>test</scope>
         </dependency>
-        <!-- 添加Spock核心依赖 -->
         <dependency>
             <groupId>org.spockframework</groupId>
             <artifactId>spock-core</artifactId>

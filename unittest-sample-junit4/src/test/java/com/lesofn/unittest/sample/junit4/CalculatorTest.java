@@ -23,13 +23,13 @@ public class CalculatorTest {
     @Test
     public void testAdd() {
         int result = calculator.add(2, 3);
-        assertEquals("2 + 3 应该等于 5", 5, result);
+        assertEquals("2 + 3 should equqls 5", 5, result);
     }
 
     @Test
     public void testSubtract() {
         int result = calculator.subtract(5, 3);
-        assertEquals("5 - 3 应该等于 2", 2, result);
+        assertEquals("5 - 3 should equqls 2", 2, result);
     }
 
 }

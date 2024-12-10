@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
  * 文档: https://alibaba.github.io/testable-mock/#/zh-cn/doc/omni-constructor
  *
  * @author sofn
- * @date 2022-05-18 16:05
+ * @since 2022-05-18 16:05
  */
 public class Test4_OmniConstructor {
 

@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author sofn
- * @date 2022-06-02 10:01
+ * @since 2022-06-02 10:01
  */
 @RestController
 @RequestMapping("/demo")

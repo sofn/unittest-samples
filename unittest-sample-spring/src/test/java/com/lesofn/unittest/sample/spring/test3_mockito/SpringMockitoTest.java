@@ -21,7 +21,7 @@ import static org.mockito.Mockito.when;
  * 需要设置： @Autowired(required = false)
  *
  * @author sofn
- * @date 2022-05-20 11:09
+ * @since 2022-05-20 11:09
  */
 @RunWith(SpringJUnit4ClassRunner.class) // 使用junit4进行测试
 @ContextConfiguration(classes = {SpringMockitoTest.SpringAnnoBase.class})

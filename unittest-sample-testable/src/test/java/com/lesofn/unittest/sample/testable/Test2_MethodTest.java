@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  * 如果mock其他类 需要放到${TargetClass}Test类里
  *
  * @author sofn
- * @date 2022-05-18 16:05
+ * @since 2022-05-18 16:05
  */
 public class Test2_MethodTest {
 

@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
  * 如果mock其他类 必须放到${TargetClass}Test类里
  *
  * @author sofn
- * @date 2022-05-19 15:21
+ * @since 2022-05-19 15:21
  */
 @MockWith(value = BasicServiceMock.class, treatAs = ClassType.TestClass)
 class Test5_GlobalServiceTest {

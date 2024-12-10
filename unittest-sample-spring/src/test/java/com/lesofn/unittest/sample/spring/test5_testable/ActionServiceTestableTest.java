@@ -18,7 +18,7 @@ import com.lesofn.unittest.sample.spring.mybatis.ActionMapper;
 
 /**
  * @author sofn
- * @date 2022-05-20 14:19
+ * @since 2022-05-20 14:19
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {ActionServiceTestableTest.SpringAnnoBase.class})

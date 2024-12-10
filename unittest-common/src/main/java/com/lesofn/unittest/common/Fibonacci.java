@@ -4,7 +4,7 @@ package com.lesofn.unittest.common;
  * 斐波那契
  *
  * @author sofn
- * @date 2022-05-17 18:13
+ * @since 2022-05-17 18:13
  */
 public class Fibonacci {
 

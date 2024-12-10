@@ -4,7 +4,7 @@ import com.lesofn.unittest.sample.testable.infrastructure.BasicService;
 
 /**
  * @author sofn
- * @date 2022-05-18 20:14
+ * @since 2022-05-18 20:14
  */
 public class Test5_GlobalService {
 

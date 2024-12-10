@@ -13,19 +13,19 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.*;
 
 /**
- * 类上的注解相当于：
+ * add annotation: @RunWith equals:
+ * @BeforeEach public void before() {
+ *      MockitoAnnotations.openMocks(this);
+ * }
  *
  * @author sofn
- * @BeforeEach public void before() {
- * MockitoAnnotations.openMocks(this);
- * }
- * @date 2022-05-17 20:02
+ * @since 2022-05-17 20:02
  */
 @ExtendWith(MockitoExtension.class)
 public class Test3_Stub {
 
     /**
-     * 要mock的对象
+     * the object to mock
      */
     @Mock
     private List<Integer> list;

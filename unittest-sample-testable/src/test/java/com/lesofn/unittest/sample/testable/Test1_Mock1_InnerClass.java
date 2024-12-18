@@ -10,6 +10,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * 内部类形式mock
  * 规则：在测试类中创建一个静态内部类，类名必须为Mock
+ * <p>
+ * Inner class form mock
+ * Rule: Create a static inner class in the test class, the class name must be Mock
  *
  * @author sofn
  * @since 2022-05-18 16:05

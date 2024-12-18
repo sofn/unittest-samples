@@ -4,7 +4,7 @@ import com.lesofn.unittest.common.Calculator
 import spock.lang.Specification
 
 /**
- * 多次执行语句
+ * execute statements multiple times
  * @author sofn
  * @since 2024-02-01 19:16
  */
@@ -12,13 +12,13 @@ class Test07_RunMulti extends Specification {
 
     static def calculator
 
-    //在所有测试方法执行之前调用一次
+    //called once before all test methods are executed
     def setupSpec() {
         calculator = new Calculator()
         println ">>>>>>   setupSpec"
     }
 
-    def "多次执行测试语句"() {
+    def "execute statements multiple times"() {
         given:
         def a = 2
 

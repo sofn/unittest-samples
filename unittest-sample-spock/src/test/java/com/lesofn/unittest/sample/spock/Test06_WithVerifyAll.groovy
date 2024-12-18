@@ -4,7 +4,7 @@ package com.lesofn.unittest.sample.spock
 import spock.lang.Specification
 
 /**
- * 风格: expect …
+ * style: expect …
  * @author sofn
  * @since 2024-02-01 19:16
  */

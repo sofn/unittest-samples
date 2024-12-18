@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * 如果mock其他类 需要放到${TargetClass}Test类里
+ * If you want to mock other classes, you need to put them in the ${TargetClass}Test class
  *
  * @author sofn
  * @since 2022-05-18 16:05

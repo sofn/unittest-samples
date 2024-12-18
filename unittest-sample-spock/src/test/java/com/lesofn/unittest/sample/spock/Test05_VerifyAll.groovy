@@ -4,7 +4,7 @@ import com.lesofn.unittest.common.Calculator
 import spock.lang.Specification
 
 /**
- * 风格: expect …
+ * style: expect …
  * @author sofn
  * @since 2024-02-01 19:16
  */
@@ -12,13 +12,13 @@ class Test05_VerifyAll extends Specification {
 
     static def calculator
 
-    //在所有测试方法执行之前调用一次
+    //called once before all test methods are executed
     def setupSpec() {
         calculator = new Calculator()
         println ">>>>>>   setupSpec"
     }
 
-    def "没有参数的 verifyAll"() {
+    def "no param verifyAll"() {
         when:
         int z1 = calculator.add(1, 1)
         int z2 = calculator.add(1, 2)

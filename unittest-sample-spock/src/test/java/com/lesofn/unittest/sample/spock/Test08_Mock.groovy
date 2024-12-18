@@ -4,7 +4,7 @@ import com.lesofn.unittest.common.Calculator
 import spock.lang.Specification
 
 /**
- * 多次执行语句
+ * execute statements multiple times
  * @author sofn
  * @since 2024-02-01 19:16
  */

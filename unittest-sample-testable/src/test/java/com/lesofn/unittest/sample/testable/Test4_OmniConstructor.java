@@ -6,7 +6,7 @@ import com.alibaba.testable.core.tool.PrivateAccessor;
 import org.junit.jupiter.api.Test;
 
 /**
- * 文档: https://alibaba.github.io/testable-mock/#/zh-cn/doc/omni-constructor
+ * <a href="https://alibaba.github.io/testable-mock/#/zh-cn/doc/omni-constructor">wiki</a>
  *
  * @author sofn
  * @since 2022-05-18 16:05

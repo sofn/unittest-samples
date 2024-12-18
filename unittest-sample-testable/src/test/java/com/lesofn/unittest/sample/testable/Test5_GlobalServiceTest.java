@@ -7,7 +7,7 @@ import com.lesofn.unittest.sample.testable.infrastructure.BasicServiceMock;
 import org.junit.jupiter.api.Test;
 
 /**
- * 如果mock其他类 必须放到${TargetClass}Test类里
+ * If you mock other classes, you must put them in the ${TargetClass}Test class
  *
  * @author sofn
  * @since 2022-05-19 15:21

@@ -23,9 +23,9 @@ public class Test3_PrivateMethod {
 
     @Test
     public void testPrivateMethod() throws Exception {
-        // mock私有方法
+        // mock private method
         PowerMockito.when(powerMockService, "isExists", "./").thenReturn(true);
-        // mock没有返回值的私有方法
+        // mock void method
         PowerMockito.doNothing().when(powerMockService, "log", "./");
 
         // do

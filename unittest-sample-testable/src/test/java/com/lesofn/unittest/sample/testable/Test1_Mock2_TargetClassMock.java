@@ -8,6 +8,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * 独立类 使用TestableServiceMock中的mock
  * 规则：在测试类相同包路径下创建一个类，类名为被测试类名+Mock
+ * <p>
+ * Independent class uses mock in TestableServiceMock
+ * Rule: Create a class in the same package path as the test class, and the class name is the name of the tested class + Mock
  *
  * @author sofn
  * @since 2022-05-18 16:05

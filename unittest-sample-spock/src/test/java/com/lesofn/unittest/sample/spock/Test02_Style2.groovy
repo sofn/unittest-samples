@@ -4,7 +4,7 @@ import com.lesofn.unittest.common.Calculator
 import spock.lang.Specification
 
 /**
- * 风格: given … when … then …
+ * style: given … when … then …
  * @author sofn
  * @since 2024-02-01 19:16
  */
@@ -12,35 +12,34 @@ class Test02_Style2 extends Specification {
 
     static def calculator
 
-    //在所有测试方法执行之前调用一次
+    //called once before all test methods are executed
     def setupSpec() {
         calculator = new Calculator()
         println ">>>>>>   setupSpec"
     }
 
-    // 测试方法
+    // test method
     def "test plus 1"() {
-        // given可以省略
-        given: "准备数据"
+        given: "prepare"
         def a = 1
         def b = 2
 
-        when: "测试方法"
+        when: "call test method"
         def c = calculator.add(a, b)
 
-        then: "校验结果"
+        then: "verity result"
         c == 3
     }
 
     def "test minus 1"() {
-        given: "准备数据"
+        given: "prepare"
         def a = 1
         def b = 2
 
-        when: "测试方法"
+        when: "call test method"
         def c = calculator.add(a, b)
 
-        then: "校验结果"
+        then: "verity result"
         c == 4 - 1
     }
 }

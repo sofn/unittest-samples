@@ -11,7 +11,9 @@ import static com.alibaba.testable.core.tool.TestableTool.MOCK_CONTEXT;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
- * 如果mock其他类 需要放到${TargetClass}Test类里
+ * If you want to mock other classes, you need to put them in the ${TargetClass}Test class
+ * <p>
+ * If you want to mock other classes, you need to put them in the ${TargetClass}Test class
  *
  * @author sofn
  * @since 2022-05-18 16:05
@@ -21,12 +23,12 @@ public class Test2_MethodTest {
     private Test2_Method service = new Test2_Method();
 
     /**
-     *  @MockDiagnose 注解调整日志级别
+     *  @MockDiagnose change log level
      */
     @MockDiagnose(LogLevel.DISABLE)
     public static class Mock {
         /**
-         * 默认方法名是和被mock的类方法名一致
+         * The default method name is the same as the mocked class method name.
          */
         @MockInvoke(targetClass = String.class)
         private String trim() {
@@ -34,7 +36,7 @@ public class Test2_MethodTest {
         }
 
         /**
-         * 如果方法名不一致需要指定
+         * If the method name is inconsistent, you need to specify
          */
         @MockInvoke(targetClass = String.class, targetMethod = "substring")
         private String sub(int i, int j) {
@@ -76,7 +78,8 @@ public class Test2_MethodTest {
     }
 
     /**
-     * 注意不能在测试类里直接调用静态方法，只能调用被测对象里的方法间接调用
+     * Note that you cannot call static methods directly in the test class,
+     * you can only call them indirectly by calling methods in the object being tested.
      */
     @Test
     public void should_mock_static_method() {
